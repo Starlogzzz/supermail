@@ -32,7 +32,7 @@ export default {
     border: 1px solid #ccc;
     margin-bottom: -5px;
     background-color: royalblue;
-    background: url(../../../../dist/img/222.png);
+    background: url(../../../../public/222.png);
     background-size: 100%;
 }
 
