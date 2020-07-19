@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-    <left-hand class="lefthand" @changepage1="changepage" @changepage2="changepage"></left-hand>
-    <classification class="righthand" v-if="this.page === 1"></classification>
-    <classification2 class="righthand" v-if="this.page === 2"></classification2>
+    <left-hand class="lefthand" @tabClick="changepage"></left-hand>
+    <classification class="righthand" v-if="this.page === 0"></classification>
+    <classification2 class="righthand" v-if="this.page === 1"></classification2>
   </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       scroll: null,
-      page: null
+      page: 0
     };
   },
   methods:{
@@ -30,31 +30,11 @@ export default {
       this.page = data;
       console.log(this.page);   
     }
-  },
-  // created() {},
-  // mounted() {
-  //   this.scroll = new BScroll(document.querySelector(".wrapper"), {
-  //     probeType: 3,
-  //     pullUpLoad: true
-  //   });
-
-  //   this.scroll.on("scroll", position => {
-  //     //console.log(position);
-  //   });
-
-  //   this.scroll.on("pullingUp", () => {
-  //     console.log("上拉加载更多");
-  //   });
-  // }
+  }
 };
 </script>
   
 <style scoped>
-/* .wrapper {
-  height: 150px;
-  background-color: aqua;
-  overflow: hidden;
-} */
 
 .lefthand{
   position: relative;
