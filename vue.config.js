@@ -6,7 +6,7 @@ function resolve(dir) {
 
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-    ? '/supermail/'
+    ? '/supermail'
     : '/',
     chainWebpack: (config) => {
         config.resolve.alias
