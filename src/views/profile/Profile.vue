@@ -8,7 +8,7 @@
       <div style="grid-area: person">
         <div class="avatar">
           <div class="img" style="grid-area: img">
-            <img src="https://profile.csdnimg.cn/9/F/7/1_gao164167691" alt="" title="头像">
+            <img src="../../../public/avater.jpg" alt="" title="头像">
           </div>
           <div class="personid" style="grid-area: myid">芜湖大司马</div>
         </div>
